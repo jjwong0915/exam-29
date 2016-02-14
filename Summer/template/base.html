@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+  <title>2015楓琴建譜</title>
+
+  <!-- CSS  -->
+  <link href="/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="/js/materialize.js"></script>
+  <script src="/js/init.js"></script>
+</head>
+<body>
+  <div class="navbar-fixed">
+    <nav role="navigation">
+      <div class="nav-wrapper container">
+        <a id="logo-container" href="/" class="brand-logo">建楓暑訓</a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="/">主頁</a></li>
+          <li><a href="/content">課程內容</a></li>
+          <li><a href="/note">報名辦法</a></li>
+          <li><a href="/console">管理網站</a></li>
+        </ul>
+
+        <ul id="nav-mobile" class="side-nav">
+          <li><a href="/">主頁</a></li>
+          <li><a href="/content">課程內容</a></li>
+          <li><a href="/note">報名辦法</a></li>
+          <li><a href="/console">管理網站</a></li>
+        </ul>
+        <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu white-text"></i></a>
+      </div>
+    </nav>
+  </div>
+    {% block content %}
+    {% endblock %}
+  <footer class="page-footer brown">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="lime-text text-lighten-5">關於主辦</h5>
+          <p class="lime-text text-lighten-5">本活動是由"建國中學資訊社"與"中山女高資訊研究社"共同主辦。兩社多年來以推廣資訊為目標，一同籌辦多次大型活動，並富有舉辦活動的經驗。我們秉持著專業與熱誠，摯邀同學們參與活動。</p>
+
+
+        </div>
+        <div class="col l6 s12">
+          <h5 class="lime-text text-lighten-5">相關連結</h5>
+          <ul>
+            <li><a class="lime-text text-lighten-5" target="_blank" href="http://www.infor.org/">建國中學資訊社</a></li>
+            <li><a class="lime-text text-lighten-5" target="_blank" href="https://www.facebook.com/infor28th">INFOR 28th</a></li>
+            <hr>
+            <li><a class="lime-text text-lighten-5" target="_blank" href="https://www.facebook.com/zsisc22nd">中山女高資訊研究社22nd</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright brown darken-2">
+      <div class="container white-text">
+        Last Update: 2015.7.10
+      </div>
+    </div>
+  </footer>
+  </body>
+</html>

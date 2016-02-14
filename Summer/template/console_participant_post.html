@@ -1,0 +1,13 @@
+<td>
+       
+    <span {% if participant.gender == "女" %}style="color: red"{% endif %}>
+      {{participant.name}}
+    </span>
+
+</td>
+<td>
+      <a href="/console/participant/{{participant.key().id()}}">Details</a>
+</td>
+<td>
+      <a href="/console/participant/delete?id={{participant.key().id()}}" >Delete</a>
+</td>

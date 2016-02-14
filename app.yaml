@@ -1,0 +1,37 @@
+application: infor-28
+version: 3
+runtime: python27
+api_version: 1
+threadsafe: yes
+
+handlers:
+- url: /favicon\.ico
+  static_files: favicon.ico
+  upload: favicon\.ico
+
+- url: /css
+  static_dir: Summer/css
+
+- url: /font
+  static_dir: Summer/font
+
+- url: /css
+  static_dir: Summer/css
+
+- url: /image
+  static_dir: Summer/image
+
+- url: /js
+  static_dir: Summer/js
+
+- url: /subject
+  static_dir: Summer/subject
+
+- url: /.*
+  script: main.app
+
+libraries:
+- name: webapp2
+  version: latest
+- name: jinja2
+  version: latest

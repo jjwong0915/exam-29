@@ -1,0 +1,21 @@
+{% extends "consolebase.html" %}
+{% block content %}	
+<br>
+<div class="row">
+    <form class="col s12" method="post">
+        <div class="row">
+            <div class="input-field col s2 offset-s5">
+                <input name="passw" type="text" class="validate">
+                <label class="active" for="passw">Please enter console password</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field col s12">
+                <button class="btn waves-effect waves-light" type="submit">
+                    Login
+                </button>
+            </div>
+        </div>
+    </form>
+</div>
+{% endblock %}

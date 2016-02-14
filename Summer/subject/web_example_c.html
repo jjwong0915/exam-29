@@ -1,0 +1,88 @@
+<html>
+  <head>
+    <title>Example-c</title>
+    <meta charset="utf­8">
+    <style>
+      body{
+        background-image:url(http://i.imgur.com/ys0kheI.png);
+      }
+      .lbox {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color:black;
+        visibility:hidden;
+        opacity:0;
+        margin:0px auto;
+        -webkit-transition:visibility 0.5s linear 0.5s,opacity 0.5s linear;
+      }
+      .content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 500px;
+        height: 300px;
+        margin-top: -150px;
+        margin-left: -250px;
+        background-color: white;
+        visibility:hidden;
+        opacity:0;
+        border-radius:7px;
+        text-align:center;
+        -webkit-transition:visibility 0s linear 0.5s,opacity 0.5s linear;
+          }
+      .lbox:target{
+        visibility:visible;
+        opacity:1;
+        -webkit-transition-delay:0s;
+      }
+
+      .lbox:target > div{
+        visibility:visible;
+        opacity: 1;
+        -webkit-transition-delay:0s;
+      }
+
+      .inbox{
+        width:250px;
+        height:20px;
+        border-style:none;
+        border-bottom-style:solid;
+        border-bottom-width:medium;
+        border-bottom-color:#66CCFF;
+        -webkit-transition: 0.2s linear
+      }
+      .inbox:focus{
+        width:300px;
+        outline:0;
+      }
+      
+      [type="submit"]{
+        border:none;
+        background-color:#66CCFF;
+        width:200px;
+        height: 20px;
+        color:white
+      }
+    </style>
+  </head>
+  <body>
+    <a href="#a">Click me!</a>
+    <div class="lbox" id="a">
+      <div class="content">
+        <br>
+        <img src="http://i.imgur.com/vX3kxSp.jpg" alt="image">
+        <form>
+          <input class="inbox" type="text" placeholder="ID">
+          <br>
+          <input class="inbox" type="password" placeholder="PASSWORD">
+          <br>
+          <br>
+          <input type="submit" value="Log In" onclick="location.href='#';">
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

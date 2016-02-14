@@ -1,0 +1,25 @@
+{% extends "consolebase.html" %}
+{% block content %}	
+<table class="hoverable">
+		<thead>
+		<tr>
+			<th align='center'>
+				報名人員
+			</th>
+			<th align='center'>
+				詳細內容
+			</th>
+			<th align='center'>
+				刪除資料
+			</th>
+		</tr>
+		</thead>
+		<tbody>
+	{% for participant in participants %}
+		<tr>
+    			{{ participant.render() | safe }}    		
+    		</tr>
+	{% endfor %}
+	</tbody>
+</table>
+{% endblock %}
